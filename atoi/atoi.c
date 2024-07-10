@@ -24,8 +24,3 @@ int	atoi(char *str)
 	}
 	return (nbr * isneg);
 }
-
-int	main()
-{
-	printf("%d\n", atoi("-2147483648"));
-}
