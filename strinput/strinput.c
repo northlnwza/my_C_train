@@ -13,6 +13,8 @@ char	*str_input(void)
 	while (i < LIMIT && ch != EOF && ch != '\n')
 	{
 		ch = getchar();
+		if (ch == '\n')
+			continue;
 		buffer[i] = ch; 
 		i++;
 	}
